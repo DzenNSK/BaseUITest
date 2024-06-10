@@ -27,7 +27,8 @@ namespace BaseUITest
 
             if (prefab == null) prefab = LoadPrefab();
 
-            return GameObject.Instantiate(prefab, parent);
+            instance = GameObject.Instantiate(prefab, parent);
+            return instance;
         }
 
         public GameObject LoadPrefab()
